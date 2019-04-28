@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 #include"Client.h"
-#include<iostream>
 
 Client::Client(string Addr)
 {
@@ -62,8 +60,7 @@ void Client::ExitSocket()
 {
 	closesocket(ClientSocket);
 	WSACleanup();
-=======
-#include "Client.h"
+}
 
 //获取当前时间戳
 string Client::C_TS()
@@ -149,5 +146,4 @@ string Client::C_VDataEncapsulation(string TicketV)
 string Client::C_VDataDeEncapsulation()
 {
 
->>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 }

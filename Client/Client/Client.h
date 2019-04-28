@@ -1,11 +1,8 @@
 #pragma once
 #include<string>
-<<<<<<< HEAD
 #include<WinSock2.h>
-=======
 #include <iostream>
 #include <ctime>
->>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 using namespace std;
 
  class Client {

@@ -5,11 +5,8 @@ using namespace std;
 
 class ASserver {
 public:
-<<<<<<< HEAD
-=======
 	ASserver(int Port);
 	//socket等待监听，可实现创建多线程为多client提供服务
->>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 	string GetKeyCTGS(string TGSID);
 	//查找数据库，根据Client发来的TGSID得到Client与TGS的会话密钥
 private:
