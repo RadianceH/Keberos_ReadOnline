@@ -1,17 +1,28 @@
 #pragma once
 #include<string>
+<<<<<<< HEAD
+#include<WinSock2.h>
+=======
 #include <iostream>
 #include <ctime>
+>>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 using namespace std;
 
  class Client {
  public:
 	 string IDC;
 	 string CAddr;
-	 Client(string IDC, string CAddr);
+	 SOCKET ClientSocket;
+	 Client(string Addr);
 	 //构造函数，new Client并对成员变量用户ID以及用户IP地址赋值。
-	 void SokcetLink(string SockAddr, int SockPort);
+	 void SocketLink(string SockAddr, int SockPort);
 	 //套接字通信函数，根据IP端口发起socket连接。
+	 void SendData(string info);
+	 //通过已连接的套接字，发送数据
+	 string RecvData();
+	 //通过已连接的套接字，接收数据
+	 void ExitSocket();
+	 //断开已连接的套接字
 	 void Authentication();
 	 //Keberos认证函数，相继调用AS认证函数，TGS认证函数，应用服务器认证函数，以完成Keberos认证过程，进而保证Client客户端能够与服务器请求服务。
 	 void LinkAS(string ASAddr, int ASPort);

@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+#include"AS.h"
+#include<iostream>
+
+
+
+
+=======
 #include "AS.h"
 
 string ASserver::GetTicketTGS(string KeyCTGS, string IDC, string CAddr, string IDTGS, int LifeTime2)
@@ -23,3 +31,4 @@ string ASserver::AS_CDataDeEncapsulation()
 {
 	
 }
+>>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
