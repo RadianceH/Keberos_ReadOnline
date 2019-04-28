@@ -1,6 +1,11 @@
 #pragma once
 #include<string>
+<<<<<<< HEAD
 #include<WinSock2.h>
+=======
+#include <iostream>
+#include <ctime>
+>>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 using namespace std;
 
  class Client {
@@ -48,5 +53,6 @@ using namespace std;
 	 //客户服务器通信数据封装函数，根据Client向服务器所需发送的数据进行封装加密。
 	 string C_VDataDeEncapsulation();
 	 //客户服务器通信数据解封装函数，根据TGS发来的数据包，进行解密拆分。
-
+	 string C_TS();
+	 //获取当前TS时间戳
 };

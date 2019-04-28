@@ -5,13 +5,18 @@ using namespace std;
 
 class ASserver {
 public:
+<<<<<<< HEAD
+=======
+	ASserver(int Port);
+	//socket等待监听，可实现创建多线程为多client提供服务
+>>>>>>> 3fdc692d67a0939321ff262c215ff6feb6b716dc
 	string GetKeyCTGS(string TGSID);
-	//查找数据库，根据Client发来的TGSID得到Client与TGS的会话密钥。
+	//查找数据库，根据Client发来的TGSID得到Client与TGS的会话密钥
 private:
 	string GetTicketTGS(string KeyCTGS, string IDC, string CAddr, string IDTGS, int LifeTime2);
-	//封装加密生成Client与TGS验证所需要的TicketTGS。
+	//封装加密生成Client与TGS验证所需要的TicketTGS
 	string AS_CDataEncapsulation(string TicketTGS, string KeyCTGS, string IDTGS, int LifeTime2);
-	//封装加密整合生成最终要发回Client的数据包。
+	//封装加密整合生成最终要发回Client的数据包
 	string AS_CDataDeEncapsulation();
 	//将Client发来的数据包进行解封装。
 
