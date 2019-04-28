@@ -3,7 +3,13 @@
 string ASserver::GetTicketTGS(string KeyCTGS, string IDC, string CAddr, string IDTGS, int LifeTime2)
 //封装加密生成Client与TGS验证所需要的TicketTGS
 {
-
+	string ticketTGS="";
+	ticketTGS += KeyCTGS;
+	ticketTGS += IDC;
+	
+	ticketTGS += LifeTime2;
+	ticketTGS+=
+	return ticketTGS;
 }
 
 string ASserver::AS_CDataEncapsulation(string TicketTGS, string KeyCTGS, string IDTGS, int LifeTime2)
