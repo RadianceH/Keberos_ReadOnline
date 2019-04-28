@@ -1,11 +1,10 @@
 #pragma once
 #include<string>
+#include<WinSock2.h>
 using namespace std;
 
 class ASserver {
 public:
-	ASserver(int Port);
-	//socket等待监听，可实现创建多线程为多client提供服务。
 	string GetKeyCTGS(string TGSID);
 	//查找数据库，根据Client发来的TGSID得到Client与TGS的会话密钥。
 private:
